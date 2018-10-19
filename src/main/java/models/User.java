@@ -19,7 +19,7 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Auto> autos;
 
-    public User(int age, String name) {
+    public User(String name, int age) {
         this.age = age;
         this.name = name;
         autos = new ArrayList<Auto>();
